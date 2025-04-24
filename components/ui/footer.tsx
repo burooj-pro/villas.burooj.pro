@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center space-y-8">
           <a
-            href="https://buroojair.pro"
+            href="https://buroojair.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center group"
