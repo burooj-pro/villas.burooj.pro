@@ -76,7 +76,7 @@ export default function About() {
             }}
           >
             <img
-              src="/villa2.png"
+              src="/Villa2.png"
               alt="فيلا بروج 1"
               className="w-full h-full object-cover rounded-lg"
             />
@@ -89,7 +89,7 @@ export default function About() {
             }}
           >
             <img
-              src="/villa1.png"
+              src="/Villa1.png"
               alt="فيلا بروج 2"
               className="w-full h-full object-cover rounded-xl shadow-xl"
             />
@@ -102,7 +102,7 @@ export default function About() {
             }}
           >
             <img
-              src="/villa3.png"
+              src="/Villa3.png"
               alt="فيلا بروج 3"
               className="w-full h-full object-cover rounded-lg"
             />
