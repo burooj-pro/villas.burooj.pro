@@ -2,7 +2,8 @@ import Navbar from "@/components/ui/navbar";
 import Hero from "@/components/ui/hero";
 import About from "@/components/ui/about";
 import Features from "@/components/ui/features";
-import { ProjectHighlights } from "@/components/ui/highlights.tsx";
+import { ProjectHighlights } from "@/components/ui/highlights";
+
 
 
 import { Footer } from "@/components/ui/footer"
