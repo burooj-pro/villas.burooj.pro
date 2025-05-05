@@ -21,7 +21,7 @@ export default function Hero() {
 
           {/* Button Group Centered & Responsive */}
           <div className="flex flex-col sm:flex-row justify-center items-center flex-wrap gap-4 mt-8">
-            <Link href="/villas/villa-a-ar.pdf" target="_blank">
+            <Link href="https://drive.google.com/file/d/1KT1cT7ubgoAe7GzqSezlp9bcbBguDsZR/view?usp=sharing" target="_blank">
               <Button
                 size="lg"
                 variant="outline"
@@ -31,7 +31,7 @@ export default function Hero() {
                 فيلا أ - ملف تعريفي بالعربية
               </Button>
             </Link>
-            <Link href="/villas/villa-a-en.pdf" target="_blank">
+            <Link href="https://drive.google.com/file/d/1swUFtDBICRO8nxHrRhH8fU80qWLxi7gE/view?usp=sharing" target="_blank">
               <Button
                 size="lg"
                 variant="outline"
@@ -41,7 +41,7 @@ export default function Hero() {
                 Villa A - Brochure (EN)
               </Button>
             </Link>
-            <Link href="/villas/villa-b-ar.pdf" target="_blank">
+            <Link href="https://drive.google.com/file/d/1P3UvQRgovfMut4KOv5NFOeAS89SQcpNa/view?usp=sharing" target="_blank">
               <Button
                 size="lg"
                 variant="outline"
@@ -51,7 +51,7 @@ export default function Hero() {
                 فيلا ب - ملف تعريفي بالعربية
               </Button>
             </Link>
-            <Link href="/villas/villa-b-en.pdf" target="_blank">
+            <Link href="https://drive.google.com/file/d/1JchIG8vbpyXxmNR_cT-c88h_nwZknxDh/view?usp=sharing" target="_blank">
               <Button
                 size="lg"
                 variant="outline"
