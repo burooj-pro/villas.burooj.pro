@@ -121,3 +121,15 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family: 'AlQabas';
+  src: url('/fonts/alqabas-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'AlQabas', sans-serif;
+}

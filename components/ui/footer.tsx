@@ -1,39 +1,68 @@
-import { Linkedin, Globe } from "lucide-react"
+'use client';
+
+import { Linkedin, Globe, Mail, Phone } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-[#3437FF] text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col items-center space-y-8">
-          <a
-            href="https://buroojair.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col items-center group"
-          >
-            <Globe className="h-8 w-8 mb-2" />
-            <span className="text-lg hover:text-white/90 transition-colors">
-              لمزيد من المعلومات زوروا موقعنا الإلكتروني
-            </span>
-          </a>
+    <>
+      {/* Full-Width Image Before Footer */}
+      <section className="w-full h-[400px]">
+        <img
+          src="/footer.png"
+          alt="بروج فلل"
+          className="w-full h-full object-cover"
+        />
+      </section>
 
-          <a
-            href="https://linkedin.com/company/buroojair"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col items-center group"
-          >
-            <Linkedin className="h-8 w-8 mb-2" />
-            <span className="text-lg hover:text-white/90 transition-colors">
-              تابعونا على لينكد إن
-            </span>
-          </a>
+      {/* Footer */}
+      <footer className="bg-black text-white py-12">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center flex-wrap border-t border-white/20 pt-8">
+            {/* Left: Copyright */}
+            <p className="text-sm text-white/80">
+              © 2025 بروج. جميع الحقوق محفوظة.
+            </p>
 
-          <div className="pt-8 border-t border-white/20 text-center">
-            <p className="text-sm text-white/80">© 2024 بروج إير. جميع الحقوق محفوظة.</p>
+            {/* Right: Contact + Social */}
+            <div className="flex gap-6 mt-4 sm:mt-0 items-center">
+              <a
+                href="mailto:contact@burooj.pro"
+                className="text-white hover:text-white/70"
+                aria-label="Email"
+              >
+                <Mail className="w-5 h-5" />
+              </a>
+              <a
+                href="https://wa.me/966548366111"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-white/70"
+                aria-label="WhatsApp"
+              >
+                <Phone className="w-5 h-5" />
+              </a>
+              <a
+                href="https://burooj.pro"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-white/70"
+                aria-label="Website"
+              >
+                <Globe className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/burooj-building-services/posts/?feedView=all"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-white/70"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-  )
-} 
+      </footer>
+    </>
+  );
+}

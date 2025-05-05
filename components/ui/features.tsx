@@ -1,48 +1,61 @@
-import { Sparkles, Shield, Clock, DollarSign } from "lucide-react"
+'use client';
+
+import React from "react";
+import { Home, Zap, Wind, ShieldCheck } from "lucide-react";
 
 const features = [
   {
-    title: "كفاءة أعلى",
-    description: "تقنيات دقيقة تضمن جودة عالية في التنظيف",
-    icon: Sparkles,
+    title: "الموقع الاستراتيجي",
+    description: "تقع الفلل في قلب حي البحر بمدينة الخبر، بالقرب من الخدمات الرئيسية، مما يوفر نمط حياة متكامل وسهل الوصول.",
+    icon: <Home className="text-green-400" />,
   },
   {
-    title: "تكلفة أقل",
-    description: "تقليل العمالة والتكاليف التشغيلية بنسبة 40%",
-    icon: DollarSign,
+    title: "نظام جمع الغسيل الآلي",
+    description: "راحة يومية مع نظام ذكي يجمع الملابس من الغرف مباشرة إلى غرفة الغسيل، مما يوفر الوقت والجهد.",
+    icon: <ShieldCheck className="text-green-400" />,
   },
   {
-    title: "وقت أسرع",
-    description: "إنجاز عمليات التنظيف بسرعة فائقة بنسبة 70%",
-    icon: Clock,
+    title: "مكنسة مركزية",
+    description: "نظام تنظيف مركزي مدمج يوفر نظافة فعالة دون الحاجة لحمل معدات تقليدية بين الغرف.",
+    icon: <Zap className="text-green-400" />,
   },
   {
-    title: "أمان أكبر",
-    description: "تقليل المخاطر على العاملين بشكل كبير",
-    icon: Shield,
-  },
-]
+    title: "أنظمة أتمتة ذكية",
+    description: "تحكم متكامل بالإضاءة، التكييف، الستائر، والأجهزة من خلال تطبيق ذكي، لتجربة معيشة عصرية ومريحة.",
+    icon: <Wind className="text-green-400" />,
+  }
+];
 
-export function Features() {
+
+export default function Features() {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-[#3437FF]">
-          مميزات الخدمة
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <section
+      id="features"
+      className="pb-20 px-4 text-white"
+      style={{
+        background: "linear-gradient(90deg, #2B4037 0.46%, #111A16 44.36%, #000 99.69%)",
+      }}
+    >
+      <div className="container mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">مميزات المشروع</h2>
+        <p className="text-lg md:text-xl text-white/80 mb-12 max-w-3xl mx-auto">
+          نقدم أربع فلل ذكية بتقنيات متكاملة وتصميم فريد من نوعه، تجمع بين الرفاهية والراحة.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className="p-6 rounded-lg border border-[#3437FF]/20 hover:border-[#3437FF]/40 transition-all bg-[#3437FF]/5"
-            >
-              <feature.icon className="h-12 w-12 text-[#3437FF] mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-[#3437FF]">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
-            </div>
+   <div
+   key={index}
+   className="bg-white/10 backdrop-blur-md p-6 rounded-xl text-right shadow-lg"
+ >
+   <div className="flex items-center gap-3 mb-4">{feature.icon}</div>
+   <p className="text-lg font-medium leading-relaxed">{feature.title}</p>
+   <p className="text-sm text-white/80 mt-2">{feature.description}</p>
+ </div>
+ 
           ))}
         </div>
       </div>
     </section>
-  )
-} 
+  );
+}
