@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="container mx-auto flex items-center justify-start">
         <Link href="/">
           <Image
-             src="https://hel1.your-objectstorage.com/burooj-prod/images/3.jpeg"
+             src="https://hel1.your-objectstorage.com/burooj-prod/images/3.png"
             alt="Logo"
             width={120}
             height={40}
