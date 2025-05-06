@@ -76,7 +76,7 @@ export default function About() {
             }}
           >
             <img
-              src="/Villa2.png"
+              src="https://hel1.your-objectstorage.com/burooj-prod/images/2.jpeg"
               alt="فيلا بروج 1"
               className="w-full h-full object-cover rounded-lg"
             />
@@ -89,7 +89,7 @@ export default function About() {
             }}
           >
             <img
-              src="/Villa1.png"
+              src="https://hel1.your-objectstorage.com/burooj-prod/images/5.jpeg"
               alt="فيلا بروج 2"
               className="w-full h-full object-cover rounded-xl shadow-xl"
             />
@@ -102,7 +102,7 @@ export default function About() {
             }}
           >
             <img
-              src="/Villa3.png"
+              src="https://hel1.your-objectstorage.com/burooj-prod/images/6.jpeg"
               alt="فيلا بروج 3"
               className="w-full h-full object-cover rounded-lg"
             />

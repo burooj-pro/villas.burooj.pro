@@ -8,7 +8,7 @@ export function Footer() {
       {/* Full-Width Image Before Footer */}
       <section className="w-full h-[400px]">
         <img
-          src="/footer.png"
+          src="https://hel1.your-objectstorage.com/burooj-prod/images/7.jpeg"
           alt="بروج فلل"
           className="w-full h-full object-cover"
         />

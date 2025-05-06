@@ -29,7 +29,7 @@ export function ProjectHighlights() {
           }}
         >
           <img
-            src="/diagram.png"
+            src="https://hel1.your-objectstorage.com/burooj-prod/images/1.jpeg"
             alt="فلل بروج"
             className="w-full h-full object-cover rounded-xl shadow-lg"
           />
