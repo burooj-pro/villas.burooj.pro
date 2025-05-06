@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "فلل بروج توفر تجربة سكنية فريدة في موقع مميز بمدينة الخبر، بتصميم راقٍ ومتكامل مع الطبيعة، وأنظمة ذكية متقدمة.",
     images: [
       {
-        url: "/og.png",
+        url: "https://villas.burooj.pro/og.png",
         width: 1200,
         height: 630,
         alt: "فلل بروج - تجربة سكنية مميزة في حي البحر، الخبر",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "فلل بروج - تجربة سكنية مميزة في حي البحر، الخبر",
     description:
       "استمتع بتصميم معماري يجمع بين الحداثة والطبيعة في فلل بروج الذكية بحي البحر. تفاصيل دقيقة وأنظمة متطورة لراحة يومية.",
-    images: ["/og.png"],
+    images: ["https://villas.burooj.pro/og.png"],
     site: "@buroojsa",
   },
 };
