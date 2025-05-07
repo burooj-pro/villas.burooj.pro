@@ -51,12 +51,12 @@ export function ProjectHighlights() {
               اتصل الآن
             </a>
             <a
-              href="https://wa.me/966548366111"
-              target="_blank"
-              className="border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition text-center"
-            >
-              واتساب
-            </a>
+  href="https://wa.me/966548366111?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D8%A7%D9%84%D9%81%D9%84%D9%84%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84"
+  target="_blank"
+>
+  تواصل عبر الواتساب
+</a>
+
           </div>
         </div>
       </div>
