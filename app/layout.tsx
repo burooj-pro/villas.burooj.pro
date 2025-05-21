@@ -74,6 +74,21 @@ export default function RootLayout({
           }}
         />
 
+        {/* Google Analytics (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-XZHBEM39BT"
+        />
+        <script
+          id="gtag"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XZHBEM39BT');`,
+          }}
+        />
+
         {/* TikTok Pixel */}
         <script
           id="tiktok-pixel"
@@ -130,7 +145,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${notoKufiArabic.variable} antialiased`}>
-        {/* Meta Pixel NoScript Fallback */}
+        {/* Meta Pixel NoScript */}
         <noscript>
           <img
             height="1"
@@ -140,7 +155,7 @@ export default function RootLayout({
           />
         </noscript>
 
-        {/* Google Tag Manager NoScript Fallback */}
+        {/* Google Tag Manager NoScript */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-K696ZH7X"
