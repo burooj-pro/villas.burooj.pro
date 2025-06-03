@@ -61,6 +61,16 @@ export default function Hero() {
                 Villa B - Brochure (EN)
               </Button>
             </Link>
+            <Link href="/extenral.pdf" target="_blank">
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-white border-white text-black hover:bg-white hover:text-[#2B4037] transition-all duration-300"
+              >
+                <ArrowDownToLine className="ml-2 h-5 w-5 font-alqabas" />
+                ملف تقني - أنظمة ذكية
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
