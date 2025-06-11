@@ -3,6 +3,7 @@ import Hero from "@/components/ui/hero";
 import About from "@/components/ui/about";
 import Features from "@/components/ui/features";
 import { ProjectHighlights } from "@/components/ui/highlights";
+import SmartAutomation from "@/components/ui/smart-automation";
 
 
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <SmartAutomation />
       <Features />
       <ProjectHighlights />
       <Footer />

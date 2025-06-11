@@ -31,7 +31,7 @@ export default function Features() {
   return (
     <section
       id="features"
-      className="pb-20 px-4 text-white"
+      className="pb-20 pt-20 px-4 text-white"
       style={{
         background: "linear-gradient(90deg, #2B4037 0.46%, #111A16 44.36%, #000 99.69%)",
       }}
