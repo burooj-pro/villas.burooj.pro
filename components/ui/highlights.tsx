@@ -121,7 +121,7 @@ export function ProjectHighlights() {
                 <div className="mt-6 md:mt-8 pt-4 md:pt-6 border-t border-white/20">
                   <div className="grid grid-cols-2 gap-3 md:gap-4 text-center">
                     <div className="bg-white/5 rounded-lg md:rounded-xl p-3 md:p-4 border border-white/10">
-                      <p className="text-xl md:text-2xl font-bold text-white mb-1">٣</p>
+                      <p className="text-xl md:text-2xl font-bold text-white mb-1">٤</p>
                       <p className="text-white/80 text-xs md:text-sm font-medium">فلل متاحة</p>
                       <p className="text-white/60 text-xs">للحجز الفوري</p>
                     </div>
