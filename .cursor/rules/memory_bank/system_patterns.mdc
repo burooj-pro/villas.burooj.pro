@@ -1,0 +1,190 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# System Patterns: Hay Albahr Villas
+
+## Architectural Philosophy
+
+### Component-Driven Development
+The project follows a modular component architecture where each section of the landing page is isolated into focused, reusable components. This approach enables:
+- **Maintainability**: Easy updates to individual sections without affecting others
+- **Testability**: Isolated components for focused testing
+- **Reusability**: Components can be adapted for future Burooj projects
+
+### Layout Strategy
+```mermaid
+flowchart TD
+    Layout["Root Layout<br/>(layout.tsx)"] --> Navbar["Navigation<br/>(navbar.tsx)"]
+    Layout --> MainContent["Main Content<br/>(page.tsx)"]
+    MainContent --> Hero["Hero Section<br/>(hero.tsx)"]
+    MainContent --> About["About Section<br/>(about.tsx)"]
+    MainContent --> SmartAuto["Smart Automation<br/>(smart-automation.tsx)"]
+    MainContent --> Features["Features<br/>(features.tsx)"]
+    MainContent --> Highlights["Project Highlights<br/>(highlights.tsx)"]
+    MainContent --> Footer["Footer<br/>(footer.tsx)"]
+```
+
+## Design Patterns
+
+### Composition Pattern
+Components are designed to be composed together rather than deeply nested, following React's composition philosophy:
+
+```typescript
+// Example from page.tsx
+<main className="min-h-screen">
+  <Navbar />
+  <Hero />
+  <About />
+  <SmartAutomation />
+  <Features />
+  <ProjectHighlights />
+  <Footer />
+</main>
+```
+
+### Progressive Enhancement Pattern
+Each component is built with a mobile-first approach and progressively enhanced for larger screens:
+
+```css
+/* Mobile first, then enhanced */
+.hero-title {
+  @apply text-3xl;           /* Mobile */
+  @apply md:text-6xl;        /* Desktop enhancement */
+}
+```
+
+### Client-Side Hydration Pattern
+Strategic use of client components only where interactivity is required:
+- Server components for static content (default)
+- Client components marked with `'use client'` for animations and interactions
+
+## Animation and Interaction Patterns
+
+### Scroll-Based Animations
+Consistent use of Intersection Observer for performance-optimized scroll animations:
+
+```typescript
+const { ref, inView } = useInView({
+  triggerOnce: true,    // Animate only once
+  threshold: 0.3,       // Trigger when 30% visible
+});
+```
+
+### Parallax Effects
+Controlled parallax scrolling with device-specific optimization:
+
+```typescript
+// Desktop-only parallax for performance
+style={{
+  transform: isDesktop 
+    ? `translateY(${offsetY * -0.05}px)` 
+    : "translateY(0px)",
+}}
+```
+
+### Counting Animations
+Engaging number animations for statistics using react-countup:
+- Triggers only when section becomes visible
+- Smooth counting animation over 2-second duration
+
+## Content Management Patterns
+
+### Bilingual Content Strategy
+- Arabic content as primary language (RTL support)
+- English content for international accessibility
+- Consistent button patterns for both languages
+
+### Asset Management
+- **External CDN**: High-resolution images served from object storage
+- **Google Drive Integration**: Professional brochures with direct download links
+- **Local Video**: Promotional content served from public directory
+
+### Download Pattern
+Consistent approach to brochure downloads:
+```typescript
+<Link href="[google-drive-url]" target="_blank">
+  <Button variant="outline">
+    <ArrowDownToLine className="ml-2 h-5 w-5" />
+    [Localized Button Text]
+  </Button>
+</Link>
+```
+
+## Styling Patterns
+
+### Color System
+- **Primary Gradient**: Used consistently across sections for brand coherence
+- **Opacity Variations**: White text with varying opacity levels for hierarchy
+- **Accent Colors**: Minimal color palette focused on elegance
+
+### Layout Patterns
+- **Container Pattern**: Consistent max-width containers with responsive padding
+- **Grid Systems**: CSS Grid for complex layouts, Flexbox for simpler arrangements
+- **Spacing Scale**: Consistent use of Tailwind's spacing scale
+
+### Responsive Patterns
+```css
+/* Consistent responsive grid pattern */
+.grid-responsive {
+  @apply grid grid-cols-1;      /* Mobile: single column */
+  @apply md:grid-cols-3;        /* Desktop: three columns */
+  @apply gap-4 md:gap-8;        /* Responsive spacing */
+}
+```
+
+## Performance Patterns
+
+### Image Optimization
+- **Next.js Image Component**: Automatic optimization and lazy loading
+- **Responsive Images**: Multiple sizes served based on device capabilities
+- **CDN Delivery**: Fast global content delivery
+
+### Code Splitting
+- **Automatic Splitting**: Next.js handles component-level code splitting
+- **Dynamic Imports**: Heavy components loaded only when needed
+- **Bundle Optimization**: Tree shaking and dead code elimination
+
+### Loading States
+- **Hydration Management**: Preventing hydration mismatches with hasMounted pattern
+- **Progressive Loading**: Content appears as it becomes available
+- **Fallback States**: Graceful handling of loading states
+
+## Error Handling Patterns
+
+### Graceful Degradation
+- **Client-Side Rendering**: Fallback when JavaScript is disabled
+- **Image Fallbacks**: Alt text and loading states for images
+- **Feature Detection**: Checking capabilities before using advanced features
+
+### Accessibility Patterns
+- **Semantic HTML**: Proper heading hierarchy and landmark elements
+- **ARIA Labels**: Screen reader support for interactive elements
+- **Keyboard Navigation**: Full keyboard accessibility for all interactions
+
+## Data Flow Patterns
+
+### State Management
+- **Local State**: Component-level state for UI interactions
+- **No Global State**: Simple project doesn't require complex state management
+- **Event Handling**: Standard React event patterns
+
+### Side Effects
+- **useEffect Patterns**: Proper cleanup for event listeners
+- **Performance Optimization**: Debounced scroll handlers
+- **Memory Management**: Removing event listeners on unmount
+
+## Security Patterns
+
+### External Links
+- **Target Blank**: All external links open in new tabs
+- **Security Headers**: Proper rel attributes for external links
+- **Content Security**: Trusted external domains only
+
+### Asset Security
+- **CDN Configuration**: Proper CORS and security headers
+- **File Access**: Public assets with appropriate permissions
+- **No Sensitive Data**: All configuration and secrets properly managed
+
+This pattern documentation ensures consistent development practices and makes it easy for new developers to understand and contribute to the project while maintaining the established architectural decisions.

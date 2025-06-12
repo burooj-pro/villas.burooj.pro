@@ -1,0 +1,83 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Product Context: Hay Albahr Villas
+
+## Why This Project Exists
+
+### Market Opportunity
+- **Premium Housing Demand**: Growing demand for luxury residential properties in Al-Khobar's coastal areas
+- **Smart Home Trend**: Rising interest in technology-integrated living spaces among affluent Saudi buyers
+- **Location Advantage**: Hay Albahr's proximity to business districts and waterfront lifestyle appeal
+- **Digital Marketing Gap**: Need for sophisticated online presence to match premium positioning
+
+### Problem Statement
+Traditional real estate marketing in the region relies heavily on physical showrooms and printed materials. High-net-worth buyers increasingly expect:
+- Immediate access to detailed property information
+- High-quality digital presentations
+- Multilingual content accessibility
+- Mobile-optimized browsing experience
+
+## What We're Building
+
+### Product Vision
+"A premium digital showcase that brings the luxury villa experience online, allowing potential buyers to explore, understand, and connect with their future dream home before stepping foot on the property."
+
+### Core Features
+
+#### Villa Showcase
+- **Villa A & B Differentiation**: Clear presentation of two distinct villa models (399-420 sqm)
+- **Interactive Floor Plans**: Digital representations of living spaces
+- **Smart Home Integration**: Detailed explanation of automation systems
+- **Architectural Excellence**: Sea-inspired design philosophy presentation
+
+#### Content Management
+- **Bilingual Brochures**: Professional PDF downloads in Arabic and English
+- **Technical Documentation**: Smart systems specifications and capabilities
+- **Visual Gallery**: High-resolution photography and video content
+- **Virtual Experience**: Immersive media presentation
+
+#### User Experience
+- **Responsive Design**: Seamless experience across all devices
+- **Fast Loading**: Optimized performance for mobile networks
+- **Intuitive Navigation**: Clear information architecture
+- **Cultural Sensitivity**: Design elements respecting local preferences
+
+## How It Solves User Problems
+
+### For Potential Buyers
+- **Time Efficiency**: Comprehensive information available 24/7
+- **Informed Decision Making**: Detailed specifications and visual materials
+- **Language Accessibility**: Content in preferred language (Arabic/English)
+- **Convenience**: Download brochures for offline review
+
+### For Sales Team
+- **Qualified Leads**: Pre-informed prospects with genuine interest
+- **Professional Presentation**: Consistent brand messaging
+- **Resource Efficiency**: Reduced need for repetitive information sharing
+- **Global Reach**: Access for international investors
+
+### For Burooj Brand
+- **Market Positioning**: Establishes premium, tech-forward brand image
+- **Competitive Advantage**: Superior digital presence in traditional market
+- **Cost Effectiveness**: Scalable marketing solution
+- **Data Insights**: Analytics on user behavior and preferences
+
+## User Stories
+
+### Primary User: Affluent Home Buyer
+"As a successful professional looking for a luxury home in Al-Khobar, I want to explore villa options online so I can understand the features and make an informed decision before scheduling a viewing."
+
+### Secondary User: Real Estate Investor
+"As an investor interested in premium properties, I need detailed technical specifications and financial information so I can evaluate the investment potential."
+
+### Supporting User: Family Decision Maker
+"As someone making a family home decision, I want to share detailed information with my spouse so we can discuss the options together before proceeding."
+
+## Success Criteria
+- **Engagement**: Average session duration > 3 minutes
+- **Conversion**: Brochure download rate > 15%
+- **Accessibility**: Mobile traffic > 60%
+- **Satisfaction**: Professional impression matching luxury expectations

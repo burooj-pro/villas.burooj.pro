@@ -1,0 +1,119 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Technical Context: Hay Albahr Villas
+
+## Technology Stack
+
+### Frontend Framework
+- **Next.js 15.3.1**: React-based framework with App Router architecture
+- **React 19.0.0**: Latest React with concurrent features
+- **TypeScript 5.x**: Type-safe development with modern ES features
+
+### Styling & UI
+- **Tailwind CSS 4.x**: Utility-first CSS framework with custom configuration
+- **Class Variance Authority**: Component variant management
+- **Tailwind Merge**: Efficient class merging for dynamic styles
+- **Radix UI**: Accessible component primitives (@radix-ui/react-slot)
+
+### Interactive Components
+- **Lucide React**: Modern icon library for consistent iconography
+- **React CountUp**: Animated number counters for statistics
+- **React Intersection Observer**: Scroll-based animations and triggers
+
+### Development Tools
+- **ESLint 9.x**: Code linting with Next.js configuration
+- **PostCSS**: CSS processing and optimization
+- **Turbopack**: Next.js dev server for faster builds
+
+## Architecture Patterns
+
+### Component Structure
+```
+components/
+├── ui/
+│   ├── navbar.tsx          # Navigation component
+│   ├── hero.tsx            # Main landing section
+│   ├── about.tsx           # Project overview with parallax
+│   ├── features.tsx        # Villa features showcase
+│   ├── smart-automation.tsx # Technology highlights
+│   ├── highlights.tsx      # Project statistics
+│   ├── footer.tsx          # Site footer
+│   └── button.tsx          # Reusable button component
+```
+
+### App Router Implementation
+- **Page-based routing**: Using Next.js 13+ app directory structure
+- **Server Components**: Leveraging React Server Components where appropriate
+- **Client Components**: Interactive elements with 'use client' directive
+
+## Design System
+
+### Color Palette
+- **Primary Gradient**: `linear-gradient(90deg, #2B4037 0.46%, #111A16 44.36%, #000 99.69%)`
+- **Accent Colors**: White text on dark backgrounds for premium feel
+- **Neutral Tones**: Various opacity levels for text hierarchy
+
+### Typography
+- **Arabic Font**: 'alqabas' for Arabic content
+- **Responsive Sizing**: Scaled typography from mobile (text-3xl) to desktop (text-6xl)
+- **Font Weights**: Strategic use of bold (font-bold) for emphasis
+
+### Responsive Design
+- **Mobile-First**: Tailwind's responsive breakpoints (sm:, md:, lg:)
+- **Flexible Layouts**: CSS Grid and Flexbox for adaptive designs
+- **Performance Optimized**: Images and videos optimized for web delivery
+
+## External Integrations
+
+### Content Delivery
+- **Object Storage**: Custom CDN at `hel1.your-objectstorage.com/burooj-prod/`
+- **Google Drive**: PDF brochure hosting and distribution
+- **Video Hosting**: Self-hosted promotional video content
+
+### Media Assets
+- **High-Resolution Images**: Professional photography of villa designs
+- **Promotional Video**: Autoplay background video (Burooj.mp4)
+- **PDF Documents**: Multilingual brochures and technical specifications
+
+## Performance Considerations
+
+### Optimization Strategies
+- **Image Optimization**: Next.js Image component for automatic optimization
+- **Code Splitting**: Automatic component-level code splitting
+- **Lazy Loading**: Intersection Observer for performance-critical animations
+- **Responsive Media**: Conditional rendering based on device capabilities
+
+### Loading Performance
+- **Video Optimization**: Compressed video with multiple format support
+- **CDN Integration**: Fast asset delivery through object storage
+- **Minimal JavaScript**: Selective client-side interactivity
+
+## Development Environment
+
+### Build Configuration
+- **Next.js Config**: TypeScript configuration with custom paths
+- **ESLint Setup**: Code quality enforcement with Next.js rules
+- **PostCSS**: Tailwind CSS processing pipeline
+
+### Package Management
+- **pnpm**: Fast, efficient package manager
+- **Lock File**: pnpm-lock.yaml for consistent dependencies
+- **Script Optimization**: Turbopack dev server for faster development
+
+## Browser Support
+- **Modern Browsers**: ES2017+ support required
+- **Mobile Optimization**: iOS Safari and Chrome mobile priority
+- **Progressive Enhancement**: Graceful degradation for older browsers
+
+## Security Considerations
+- **Content Security**: External links open in new tabs
+- **Asset Security**: CDN-delivered content with proper headers
+- **Privacy Compliance**: No unnecessary tracking or data collection
+
+## Deployment Architecture
+- **Static Generation**: Pre-rendered pages for optimal performance
+- **CDN Distribution**: Global content delivery network
+- **Domain Configuration**: Custom domain (villas.burooj.pro) with SSL
